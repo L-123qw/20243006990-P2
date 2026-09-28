@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- ============================================================
+     Default (Portrait) Layout — res/layout/activity_main.xml
+     根布局为垂直 LinearLayout，所有子区域通过 layout_weight 分配空间
+     手机竖屏时加载此文件
+     ============================================================ -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- 第 1 区：顶部黑色标题栏 (weight = 2) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:background="#000000"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lab 1"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <!-- 第 2 区：白色子标题区 (weight = 1) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#FFFFFF"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Responsive Layout 1"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <!-- 第 3 区：四个彩色方块行 (weight = 1) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <!-- 红色方块 -->
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#FF0000"
+            android:gravity="center"
+            android:text="This"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+
+        <!-- 蓝色方块 -->
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#0000FF"
+            android:gravity="center"
+            android:text="is"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+
+        <!-- 紫色方块 -->
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#9955BB"
+            android:gravity="center"
+            android:text="my"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+
+        <!-- 黄色方块 -->
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#FFFF00"
+            android:gravity="center"
+            android:text="first"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <!-- 第 4 区：中间黑色内容区 (weight = 2) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:background="#000000"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Android Application"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <!-- 第 5 区：底部按钮区 (weight = 1)，浅紫色背景 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#F3E8FF"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <!-- Change 按钮 -->
+        <Button
+            android:id="@+id/btnChange"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginEnd="8dp"
+            android:background="#673AB7"
+            android:text="Change"
+            android:textColor="#FFFFFF" />
+
+        <!-- Cancel 按钮 -->
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="8dp"
+            android:background="#673AB7"
+            android:text="Cancel"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+</LinearLayout>
